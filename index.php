@@ -20,7 +20,7 @@
 		<!-- build:js js/app.min.js -->
 		<script type="text/javascript" src="lib/melonJS-1.1.0-min.js"></script>
 
-		<!-- Plugin(s) -->
+	<!-- Plugin(s) -->
 		<script type="text/javascript" src="lib/plugins/debugPanel.js"></script>
 		
 		<!-- Game Scripts -->

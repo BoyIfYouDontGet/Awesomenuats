@@ -1,7 +1,7 @@
 game.resources = [
 
 	/* Graphics. 
-	 * @example
+	  @example
 	 * {name: "example", type:"image", src: "data/img/example.png"},
 	 */
 	{name: "background-tiles", type:"image", src: "data/img/background-tiles.png"},
