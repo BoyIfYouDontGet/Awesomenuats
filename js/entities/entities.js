@@ -16,23 +16,22 @@ game.PlayerEntity = me.Entity.extend({
         
         //this line sets the speed of our character
         this.body.setVelocity(10, 10);
-        //this tracks which way thecharacter is facing
+        //keeps track of which direction your character is going
         this.facing = "right";
         this.now = new Date().getTime();
         this.lastHit = this.now;
-        this.lastAttack = new Date().getTime();/
+        this.lastAttack = new Date().getTime();//Haven't used this
         
         me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
 
         this.renderable.addAnimation("idle", [78]);
-        //these animations make the character look like its walking
-        \
+        //this will animate my character while he walks.
         this.renderable.addAnimation("walk", [117, 118, 119, 120, 121, 123, 124, 125]);
         this.renderable.addAnimation("attack", [65, 66, 67, 68, 69, 70, 71, 72], 80);
         
         this.renderable.setCurrentAnimation("idle");
     },
-    //this function checks if i pressed the right arrow key and moves the character right when i do.
+    //in update function it will check if I pressed the key so that it moves when I press it.
     update: function(delta) {
         this.now = new Date().getTime();
         if (me.input.isKeyPressed("right")) {
