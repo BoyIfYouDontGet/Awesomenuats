@@ -202,9 +202,9 @@ game.EnemyCreep = me.Entity.extend({
         this._super(me.Entity, 'init', [x, y, {
             image: "creep1",
             width: 32,
-            height: 32,
+            height: 64,
             spritewidth:"32",
-            spriteheight:"32",
+            spriteheight:"64",
             getShape: function(){
                 return (new me.Rect(0, 0, 32, 64)).toPolygon();
             }
