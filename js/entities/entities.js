@@ -15,7 +15,7 @@ game.PlayerEntity = me.Entity.extend({
             }]);
         
         //this line sets the speed of our character
-        this.body.setVelocity(10, 10);
+        this.body.setVelocity(25, 25);
         //keeps track of which direction your character is going
         this.facing = "right";
         this.now = new Date().getTime();
@@ -49,11 +49,12 @@ game.PlayerEntity = me.Entity.extend({
             this.body.vel.x = 0;
         }
         
-        if(me.input.isKeyPressed("jump") && !this.jumping && !this.falling ){
-            this.body.jumping = true;
-            this.body.vel.y -= this.body.accel.y * me.timer.tick;
+        if(me.input.isKeyPressed("jump")){
+ if(!this.body.jumping && !this.body.falling ){
+            this.body.vel.y = -this.body.maxVel.y * me.timer.tick;
+                     this.body.jumping = true;
         }
-        
+        }
         if(me.input.isKeyPressed("attack")){
             if(!this.renderable.isCurrentAnimation("attack"))
                 //Sets the current animation to attack  and once that is over
