@@ -13,7 +13,8 @@ game.PlayerEntity = me.Entity.extend({
 
                 }
             }]);
-        
+        this.type = "PlayerEntity";
+   this.health = 20;
         //this line sets the speed of our character
         this.body.setVelocity(25, 25);
         //keeps track of which direction your character is going
@@ -78,12 +79,12 @@ game.PlayerEntity = me.Entity.extend({
     me.collision.check(this, true, this.collideHandler.bind(this), true);    
     this.body.update(delta);
 
-        this._super(me.Entity, "update", [delta])
+        this._super(me.Entity, "update", [delta]);
         return true;
     },
     
     collideHandler: function(response){
-        if(response.b.type==='EnemyBaseEntity'){
+        if(response.b.type === 'EnemyBaseEntity'){
             var ydif = this.pos.y - response.b.pos.y;
             var xdif = this.pos.x -response.b.pos.x;
             
@@ -94,16 +95,17 @@ game.PlayerEntity = me.Entity.extend({
             else if(xdif>-35 && this.facing=== 'right' && (xdif<0)){
                this.body.vel.x = 0;
                this.pos.x = this.pos.x -1;
-            }else if(xdif<70 && this.facing==='left' && xdif>0){
+           }
+            else if(xdif<70 && this.facing==='left' && (xdif>0)){
                 this.body.vel.x = 0;
                 this.pos.x = this.pos.x +1;
             }
             
-            if(this.renderable.isCurrentAnimation("attack") && this.now-this.lastHit >= 1000){
-               console.log("tower Hit");
+            if(this.renderable.isCurrentAnimation("attack") && this.now-this.lastHit >= game.player.data.playerAttackTimer){
+               
                 this.lastHit = this.now;
-                response.b.loseHealth();
-            }
+                response.b.loseHealth(game.data.playerAttack);
+            };
         }
     }
     
@@ -221,8 +223,13 @@ game.EnemyCreep = me.Entity.extend({
         this.renderable.setCurrentAnimation("walk");
     },
     
-    update: function(){
-        
+    update: function(delta){
+    	this.body.vel.x -= this.body.accel.x * me.timer.tick;
+        this.body.update(delta);
+
+        this._super(me.Entity, "update", [delta]);
+
+        return true;
     }
 });
 
@@ -240,7 +247,7 @@ game.GameManager = Object.extend({
         if(Math.round(this.now/1000)%10 ===0 && (this.now - this.lastCreep >= 1000)){
             this.lastCreep = this.now;
             var creepe = me.pool.pull("EnemyCreep", 1000, 0, {});
-            me.game.world.addChild(creepe, 5);
+            me.game.world.addChild(creep, 5);
         }
         
         return true;
