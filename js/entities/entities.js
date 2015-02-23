@@ -14,9 +14,10 @@ game.PlayerEntity = me.Entity.extend({
                 }
             }]);
         this.type = "PlayerEntity";
-   this.health = 20;
+   this.health = game.data.playerHealth;
         //this line sets the speed of our character
         this.body.setVelocity(25, 25);
+        this
         //keeps track of which direction your character is going
         this.facing = "right";
         this.now = new Date().getTime();
@@ -248,6 +249,9 @@ game.EnemyCreep = me.Entity.extend({
         
         this.renderable.addAnimation("walk", [3, 4, 5], 80);
         this.renderable.setCurrentAnimation("walk");
+        this.renderable.addAnimation("jump",[3, 4, 5], 80);
+        //this.renderable.setCurrentAnimation("walk");
+        this.renderable.setCurrentAnimation("jump");
     },
     
     update: function(delta){
@@ -297,5 +301,8 @@ game.GameManager = Object.extend({
         
         return true;
     }
-    
+    if(game.data.player.dead){
+            me.game.world.removeChild(game.data.player);
+            me.state.current().resetPlayer(10, 0);
+       }
 });
