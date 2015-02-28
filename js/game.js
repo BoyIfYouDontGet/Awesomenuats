@@ -6,22 +6,30 @@ var game = {
 	data : {
 		// score
 		score : 0,
-		
                 enemyBaseHealth: 10,
                 playerBaseHealth: 10,
-               enemyCreepHealth: 10,
-               playerHealth: 10,
-               enemyCreepAttack: 1,                
-				playerAttack: 1,
-               playerAttackTimer: 1000,
-              enemyCreepAttackTimer: 1000,
-               playerMoveSpeed: 5,
-               creepMoveSpeed: 5,                
-               player: "";
-               GameManager: "";
-
- 	},
-	},
+                enemyCreepHealth: 1,
+                playerHealth: 10,
+                enemyCreepAttack: 1,
+                playerAttack: 1,
+                    //orcBaseDamage: 10,
+                    //orcBaseHealth: 100,
+                    //orcBaseSpeed: 3,
+                    //orcBaseDefense: 0,
+                playerAttackTimer: 1000,
+                enemycreepAttackTimer: 1000,
+                playerMoveSpeed: 5,
+                creepMoveSpeed: 5,
+                gameManager:"",
+                player: "",
+                exp: 0,
+                gold: 0,
+                exp1: 0,
+                exp2: 0,
+                exp3: 0,
+                exp4: 0
+        },
+        
 	
 	
 	// Run on page load.
@@ -54,14 +62,14 @@ var game = {
 
 	// Run on game resources loaded.
 	"loaded" : function () {
-		me.pool.register("player", game.PlayerEntity, true);
-		me.pool.register("PlayerBase", game.PlayerBaseEntity);
-		me.pool.register("EnemyBase", game.PlayerBaseEntity);
-		me.pool.register("EnemyCreep", game.EnemyCreep, true);
-		me.pool.register("GameManager", game.GameManager);
-
-
-
+            //this add the character to the pool of objects that we can use.
+            // game.PlayerEntity connects the player to the game.
+                me.pool.register("player", game.PlayerEntity, true);
+                me.pool.register("PlayerBase", game.PlayerBaseEntity);
+                me.pool.register("EnemyBase", game.EnemyBaseEntity);
+                me.pool.register("EnemyCreep", game.EnemyCreep, true);
+                me.pool.register("GameManager", game.GameManager);
+                
 		me.state.set(me.state.MENU, new game.TitleScreen());
 		me.state.set(me.state.PLAY, new game.PlayScreen());
 

@@ -20,7 +20,7 @@
 		<!-- build:js js/app.min.js -->
 		<script type="text/javascript" src="lib/melonJS-1.1.0-min.js"></script>
 
-	<!-- Plugin(s) -->
+		<!-- Plugin(s) -->
 		<script type="text/javascript" src="lib/plugins/debugPanel.js"></script>
 		
 		<!-- Game Scripts -->
@@ -28,6 +28,10 @@
 		<script type="text/javascript" src="js/resources.js"></script>
 
 		<script type="text/javascript" src="js/entities/entities.js"></script>
+                <script type="text/javascript" src="js/entities/EnemyBaseEntity.js"></script>
+                <script type="text/javascript" src="js/entities/PlayerBaseEntity.js"></script>
+                <script type="text/javascript" src="js/entities/GameManager.js"></script>
+                <script type="text/javascript" src="js/entities/EnemyCreep.js"></script>
 		<script type="text/javascript" src="js/entities/HUD.js"></script>
 
 		<script type="text/javascript" src="js/screens/title.js"></script>
@@ -37,7 +41,6 @@
 		<script type="text/javascript">
 			window.onReady(function onReady() {
 				game.onload();
-
 				// Mobile browser hacks
 				if (me.device.isMobile && !navigator.isCocoonJS) {
 					// Prevent the webview from moving on a swipe
@@ -46,13 +49,11 @@
 						window.scroll(0, 0);
 						return false;
 					}, false);
-
 					// Scroll away mobile GUI
 					(function () {
 						window.scrollTo(0, 1);
 						me.video.onresize(null);
 					}).defer();
-
 					me.event.subscribe(me.event.WINDOW_ONRESIZE, function (e) {
 						window.scrollTo(0, 1);
 					});
