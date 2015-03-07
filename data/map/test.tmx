@@ -37,7 +37,7 @@
     <property name="EnemyBase" value=""/>
    </properties>
   </object>
-  <object name="PlayerBase" x="64" y="412" width="84" height="148">
+  <object name="PlayerBase" x="210" y="412" width="84" height="148">
    <properties>
     <property name="PlayerBase" value=""/>
    </properties>
