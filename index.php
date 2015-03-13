@@ -18,7 +18,7 @@
 
 		<!-- melonJS Library -->
 		<!-- build:js js/app.min.js -->
-		<script type="text/javascript" src="lib/melonJS-1.1.0-min.js"></script>
+		<script type="text/javascript" src="lib/melonJS-1.1.0.js"></script>
 
 		<!-- Plugin(s) -->
 		<script type="text/javascript" src="lib/plugins/debugPanel.js"></script>
@@ -36,6 +36,7 @@
 
 		<script type="text/javascript" src="js/screens/title.js"></script>
 		<script type="text/javascript" src="js/screens/play.js"></script>
+                <script type="text/javascript" src="js/screens/spendExp.js"></script>
 		<!-- /build -->
 		<!-- Bootstrap & Mobile optimization tricks -->
 		<script type="text/javascript">
