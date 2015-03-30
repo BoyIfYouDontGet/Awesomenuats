@@ -21,7 +21,7 @@ game.PlayerEntity = me.Entity.extend({
     },
     
     setSuper:function(){
-       this._super(me.Entity, 'init', [x, y, ] {
+       this._super(me.Entity, 'init', [x, y, {
                 image: "player",
                 width: 64,
                 height: 64,
