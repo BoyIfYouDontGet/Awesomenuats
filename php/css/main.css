@@ -1,0 +1,25 @@
+body {
+	background: url(http://aviatstudios.com/wp-content/uploads/2012/07/whitePaintedBrickWallTexture.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  
+  background-size: 100% 100%;
+	font-family: 'Open Sans', sans-serif;
+ 
+}
+title {
+	text-align: right;
+	text-align: center;
+	border-bottom: 3px solid black;
+	padding-bottom: 5px;
+	margin-left: 300px ;
+	margin-right: 300px;
+
+}
+h1 {
+	
+}
+div {
+	text-align: left;
+}

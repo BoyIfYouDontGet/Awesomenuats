@@ -1,0 +1,389 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"collidewith",
+				"collideWithEnemyBase"
+			],
+			[
+				"game",
+				"gamemanager"
+			],
+			[
+				"add",
+				"addChild"
+			],
+			[
+				"Ga",
+				"GameManager"
+			],
+			[
+				"is",
+				"isCurrentAnimation"
+			],
+			[
+				"get",
+				"getShape"
+			],
+			[
+				"spri",
+				"spriteheight"
+			],
+			[
+				"set",
+				"setCurrentAnimation"
+			],
+			[
+				"Wha",
+				"Whale"
+			],
+			[
+				"Mo",
+				"Monkey"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"h",
+				"h1	Tag"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"mt",
+				"mt_rand"
+			],
+			[
+				"ac",
+				"action	Attr"
+			],
+			[
+				"sess",
+				"session_start"
+			],
+			[
+				"filter_",
+				"filter_input"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"text",
+				"textarea	Tag"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"c",
+				"color"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"al",
+				"vertical-align"
+			],
+			[
+				"backgrouan",
+				"background-repeat"
+			],
+			[
+				"r",
+				"rgba()"
+			],
+			[
+				"b",
+				"black"
+			],
+			[
+				"backg",
+				"background-size"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"a",
+				"text-align"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"texa",
+				"text-transform"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"li",
+				"link	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/Awesomenauts/js/entities/GameManager.js",
+		"/C/xampp/htdocs/Awesomenauts/js/screens/loadprofile.js",
+		"/C/xampp/htdocs/Awesomenauts/js/entities/EnemyCreep.js",
+		"/C/xampp/htdocs/Awesomenauts/js/game.js",
+		"/C/xampp/htdocs/BLOG/index.php",
+		"/C/xampp/htdocs/Awesomenauts/js/entities/PlayerBaseEntity.js",
+		"/C/xampp/htdocs/Awesomenauts/data/map/test.tmx",
+		"/C/xampp/htdocs/Awesomenauts/lib/melonJS-1.1.0-min.js",
+		"/C/xampp/htdocs/Awesomenauts/index.php",
+		"/C/xampp/htdocs/PHPOOP/inheritence.php",
+		"/C/xampp/htdocs/Awesomenauts/data/img/orcSpearIcon.png",
+		"/C/xampp/htdocs/Awesomenauts/index.html",
+		"/C/xampp/htdocs/MiguelGAwesomenauts/index.php",
+		"/C/xampp/htdocs/PHPOOP/lecture5.php",
+		"/C/xampp/htdocs/PHPOOP/run.php",
+		"/C/xampp/htdocs/PHPOOP/test.php",
+		"/C/xampp/htdocs/PHPOOP/lecture1.php",
+		"/C/Users/Student/Desktop/Project-1/CSS/main.css",
+		"/C/xampp/htdocs/BLOG/view/Register-form.php",
+		"/C/xampp/htdocs/BLOG/view/login-form.php",
+		"/C/xampp/htdocs/BLOG/view/header.php",
+		"/C/xampp/htdocs/BLOG/CSS/main.css",
+		"/C/xampp/htdocs/BLOG/controller/create-post.php",
+		"/C/xampp/htdocs/BLOG/model/Database.php",
+		"/C/xampp/htdocs/BLOG/view/form.php",
+		"/C/xampp/htdocs/BLOG/view/footer.php",
+		"/C/xampp/htdocs/BLOG/controller/read-post.php",
+		"/C/xampp/htdocs/BLOG/controller/logout-user.php",
+		"/C/xampp/htdocs/BLOG/controller/login-verify.php",
+		"/C/xampp/htdocs/BLOG/controller/login-user.php",
+		"/C/Users/Student/Desktop/Project-1/index.html",
+		"/C/xampp/htdocs/BLOG/JS/readmore.js",
+		"/C/xampp/htdocs/BLOG/JS/main.js",
+		"/C/xampp/htdocs/BLOG/register.php",
+		"/C/xampp/htdocs/BLOG/controller/create-user.php",
+		"/C/xampp/htdocs/BLOG/model/config.php",
+		"/C/xampp/htdocs/BLOG/posts.php",
+		"/C/xampp/htdocs/BLOG/login.php",
+		"/C/xampp/htdocs/BLOG/controller/create-db.php",
+		"/C/xampp/htdocs/BLOG/view/navigation.php",
+		"/C/xampp/htdocs/BLOG/view/Register-form.html",
+		"/C/xampp/htdocs/BLOG/controller/Date.php",
+		"/C/xampp/htdocs/BLOG/model/database.php",
+		"/C/xampp/htdocs/BLOG/view/config.php",
+		"/C/xampp/htdocs/BLOG/blog.php",
+		"/C/xampp/htdocs/BLOG/controller/create.db",
+		"/C/xampp/htdocs/Quiz/Quiz.php",
+		"/C/xampp/htdocs/BLOG/controller/create-db.php.db",
+		"/C/xampp/htdocs/BLOG/model/database",
+		"/C/xampp/htdocs/Quiz/quiz1.php",
+		"/C/xampp/htdocs/Lessons/CSS/main.css",
+		"/C/xampp/htdocs/Lessons/cheatsheet.php",
+		"/C/xampp/htdocs/Lessons/lesson.php",
+		"/C/xampp/htdocs/lesson",
+		"/C/xampp/htdocs/PHPT/index.php",
+		"/C/xampp/htdocs/PHPT/Home.php",
+		"/C/xampp/htdocs/PHP PROJECT/Home.php",
+		"/C/xampp/htdocs/PHP PROJECT/index.php",
+		"/C/Users/Student/Desktop/PHP PROJECT/index.php",
+		"/C/Users/Student/Desktop/PHP PROJECT/Home.php",
+		"/C/Users/Student/Desktop/PHP PROJECT/index.html",
+		"/C/Users/Student/Desktop/Test-1/CSS/main.css",
+		"/C/Users/Student/Desktop/Test-1/plsdan.jpg",
+		"/C/Users/Student/Desktop/Test-1/index.html",
+		"/C/Users/Student/Desktop/Project-1/CSS/custom-style.css",
+		"/C/Users/Student/Desktop/Project-1/CSS/main2.css",
+		"/C/Users/Student/Desktop/Project-1/project.html",
+		"/C/Users/Student/Desktop/project-2/index.html",
+		"/C/Users/Student/Desktop/project-2/CSS/main.css",
+		"/C/Users/Student/Desktop/Project-2/index.html",
+		"/C/Users/Student/Desktop/Project-1/css/main.css",
+		"/C/Users/Student/Desktop/Project-1/js/bootstrap.min.js",
+		"/C/Users/Student/Desktop/Project-1/CSS/bootstrap.min.css",
+		"/C/Users/Student/Desktop/Portfolio 1.0/main.css",
+		"/C/Users/Student/Desktop/Portfolio 1.0/index.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"PlayerBase",
+			"class Bird {\npublic $firstName;\npublic $lastName;\npublic $breed;\nfunction __construct($title, $firstName, $lastName, $breed) {\n$this­>firstName = $firstName;\n$this­>lastName = $lastName;\n$this­>breed = $breed;\n\n}\n\nfunction getName() {\nreturn “{$this­>firstName}” .\n“{$this­>lastName}”;\n\n}\n\n}\n$bird1 = new Bird(“Tom”, “Fav”, “pigeon”);\nprint “bird 1: {$dog1­>getName()}\\n;\n",
+			"> ",
+			"        \n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "play.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 140.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
