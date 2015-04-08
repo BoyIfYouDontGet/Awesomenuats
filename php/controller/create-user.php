@@ -20,7 +20,7 @@
 			. "password = '$hashedPassword',"
 			. "salt = '$salt'");
 	if($query) {
-		echo "Successfully created user: $username";
+		echo "true";
 	}
 	else {
 	 echo "<p>" . $_SESSION["connection"]->error . "</p>";
