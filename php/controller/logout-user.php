@@ -6,4 +6,3 @@
 //destroys a session if the user is logging out
         session_destroy();
         header("Location: " . $path . "index.php");
-        

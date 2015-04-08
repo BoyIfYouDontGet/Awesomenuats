@@ -17,4 +17,3 @@
     //created session
     	$_SESSION["connection"] = $connection;
 	}
-?>

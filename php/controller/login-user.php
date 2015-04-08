@@ -11,10 +11,10 @@
 // this if statement runs the login info in the database and the 3 equals signs check to see if the login info matches
             if ($row["password"] === crypt($password, $row["salt"])) {
                 $_SESSION["authenticated"] = true;
-                echo "<p>Login Successful</p>";
+                echo "Login Successful";
             } else {
-                echo "<p>Invalid username and password</p>";
+                echo "Invalid username and password";
             }
         } else {
-            echo "<p>Invalid username and password</p>";
+            echo "Invalid username and password";
         }

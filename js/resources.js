@@ -10,14 +10,14 @@ game.resources = [
 	{name: "tower", type: "image", src: "data/img/tower_round.svg.png"},
 	{name: "creep1", type: "image", src: "data/img/brainmonster.png"},
 	{name: "gloop", type: "image", src:"data/img/gloop.png"},
-	{name: "title-screen", type: "image", src:"data/img/space_wallpaper.png"},
+	{name: "title-screen", type: "image", src:"data/img/title.png"},
 	{name: "exp-screen", type: "image", src:"data/img/loadpic.png"},
 	{name: "gold-screen", type: "image", src:"data/img/spend.png"},
 	{name: "spear", type: "image", src:"data/img/spear.png"},
-	{name: "sandtiles", type: "image", src:"data/img/sandtiles.png"},
-	{name: "woodpieces", type: "image", src:"data/img/woodpieces.png"},
-	{name: "treetiles", type: "image", src:"data/img/treetiles.png"},
-	{name: "AwesomenautsBG", type: "image", src:"data/img/AwesomenautsBG.png"},
+	//{name: "sandtiles", type: "image", src:"data/img/sandtiles.png"},
+	//{name: "woodpieces", type: "image", src:"data/img/woodpieces.png"},
+	//{name: "treetiles", type: "image", src:"data/img/treetiles.png"},
+	//{name: "AwesomenautsBG", type: "image", src:"data/img/AwesomenautsBG.png"},
 	{name: "load-screen", type: "image", src:"data/img/loadpic.png"},
 	{name: "new-screen", type: "image", src:"data/img/newpic.png"},
 	{name: "minimap", type: "image", src:"data/img/minimap.png"},
@@ -39,7 +39,7 @@ game.resources = [
 	 * @example
 	 * {name: "example_bgm", type: "audio", src: "data/bgm/"},
 	 */	
- 	 {name: "Savant-Splinter", type: "audio", src: "music/"},//allows the level to play music 
+ 	 {name: "m", type: "audio", src: "data/bgm/"},//allows the level to play music 
 
 
 
