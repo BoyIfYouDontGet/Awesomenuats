@@ -1,72 +1,55 @@
 <?php
-// to create a class, you put classs then you put the name of the classs afterwards.
-// the class I am creating is going to take repeated code and make our code easier to read. A class is an object. A class can have variables inside. Classes store information so you can call it later. 
-class Database
-{
-    private $connection;
-    private $host;
-    private $password;
-    private $username;
-    private $database;
-    public $error;
-    public function __construct($host, $username, $password, $database)
-    {
-        $this->host     = $host;
-        $this->username = $username;
-        $this->password = $password;
-        $this->database = $database;
-        
-        
-        $this->connection = new mysqli($host, $username, $password);
-        if ($this->connection->connect_error) {
+//to create your own object to make variables and use function.  a Class is a blueprint for an object.
+class Database {
+private $connection;//private means that its only accesible in this file only
+private $host; 
+private $username;  
+private $password; 
+private $database; 
+public  $error;//public makes it easier to use publiclly 
+//variable error to fix other errors
+public function __construct($host, $username, $password, $database) {//the local infomation into the function taking the function 
+      $this->host = $host;//"this" keyword
+      $this->username = $username;
+      $this->password = $password;
+      $this->database = $database;//passing the infomation to the global info.
+      $this->connection = new mysqli($host, $username, $password);//creates the new connection w/ string variables
+        if($this->connection->connect_error) {//if statement is checking if there was a connection error
             die("<p>Error: " . $this->connection->connect_error . "</p>");
         }
-        // checks to see if the database exists
-        $exists = $this->connection->select_db($database);
-        // kills the program if there is a connection error.
-        if (!$exists) {
-            // sending commands to the Database
-            $query = $this->connection->query("CREATE DATABASE $database");
-            if ($query) {
-                echo "Successfully created database: " . $database . "</p>";
+        else { 
+            echo "Success" . $this->connection->host_info;
+        }
+        $exists = $this->connection->select_db($database);//trys to access the database
+        if(!$exists) {// performs commands to exist if it doesn't exist
+            $query = $this->connection->query("CREATE DATABASE $database");// a string
+            // a statement to tells $database to create a database.
+            if($query) {//to output a string
+                echo "<p>Successfully created database " . $database . "</p>";//paragraph tags to space out 
             }
-        } else {
-            echo "<p>database already exists.<p>";
-            // since a datebase exists already, this else statent runs
-            
-            
         }
+        else{// makes it execute the database to be completed
+            echo "<p>Database Already Exists.</p>";
+        }//whole code only runs when the database exists
+}
+public function openConnection() {//opens the connection in my database
+      $this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
+    if  ($this->connection ->connect_error) {//if statement is checking if there was a connection error
+        die("<p>Error: " . $this->connection->connect_error . "</p>");
     }
-    // this mysqli checks if the connection works, if it doesnt, then the program dies.
-    public function openConnection()
-    {
-        $this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
-        
-        if ($this->connection->connect_error) {
-            die("<p>Error: " . $this->connection->connect_error . "</p>");
-        }
+}
+public function closeConnection() {//closes the connection in my database 
+    if(isset($this->connection)) {//it is checking the variables has its set or not 
+     $this->connection->close();//checking the closed connection
     }
-    public function closeConnection()
-    {
-        // this if statemnet checks to see if we able open up a connection. The isset checks to see if theres something inside the variable. If there is not isset then isset returns no
-        if (isset($this->connection)) {
-            $this->connection->close();
-        }
+}
+public function query($string) {//calls the variable string into the query
+       $this->openConnection();
+       $query = $this->connection->query($string);//uses the string to call into the query
+       if(!$query) {
+            $error = $this->connection->error;//assigning
+       }
+       $this->closeConnection();
+       return $query;//returns the variable querys
     }
-    
-    public function query($string)
-    {
-        $this->openConnection();
-        // querys the  database
-        $query = $this->connection->query($string);
-        
-        if (!$query) {
-            $this->error = $this->connection->error;
-        }
-        
-        $this->closeConnection();
-        
-        return $query;
-    }
-    
 }

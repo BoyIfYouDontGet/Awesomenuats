@@ -1,19 +1,15 @@
 <?php
-
-	require_once(__DIR__ . "/database.php");
-	session_start();
-	session_regenerate_id(true);
-	$path     = "/BLOG/";
-//refracted the variable from database.php to this config.php. I refractured this code because it make it easier for us to maintain our website
-// variables
-	$host     = "localhost";
-	$username = "root";
-	$password = "root";
-	$database = "blog_db";
-/// this variable contains all the functions (open connection close connection etc. )
-//this if statement checks if a session has started. if it has started, then a new database object will not start.
-	if (!isset($_SESSION["connection"])) {
-    	$connection = new Database($host, $username, $password, $database);
-    //created session
-    	$_SESSION["connection"] = $connection;
-	}
+//stores infomation 
+	require_once(__DIR__ . "/Database.php");
+	session_start();//starts session
+	session_regenerate_id(true);//gives a session a id and deletes the old session
+	
+    $path = "/Awesomenauts/php/";//a new path variable
+	$host = "localhost";// the variable host
+	$username = "root";//the variable username 
+	$password = "root";//the variable password
+	$database = "awesomenauts_db";//the variable database
+	if(!isset($_SESSION["connection"])) {//checks it the variable is set on not.
+		$connection = new Database($host, $username, $password, $database);
+		$_SESSION["connection"] = $connection;//access the session variable throughout all the webpages.
+}
