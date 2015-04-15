@@ -18,11 +18,11 @@ game.NewProfile = me.ScreenObject.extend({
 			me.game.world.addChild(new (me.Renderable.extend({
 				init: function() {
 					this._super(me.Renderable, 'init', [10, 10, 300, 50]); 
-					this.font = new me.Font("Times New Roman", 45, "white");
+					this.font = new me.Font("Cursive", 45, "white");
 				},
 
 				draw: function(renderer){
-					this.font.draw(renderer.getContext(), "PICK A USERNAME AND PASSWORD", this.pos.x, this.pos.y);
+					this.font.draw(renderer.getContext(), "Choose a username and password", this.pos.x, this.pos.y);
 				}
 			})));
 },
